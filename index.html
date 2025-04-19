@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FemiteBox</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="img/icon.png" type="image/png">
+</head>
+<header>
+    <h1>FemiteBox!</h1>
+    <nav>
+        <button onclick="showTab('about')">About</button>
+        <button onclick="showTab('htj')">How to join?</button>
+        <button onclick="showTab('contact')">Contact</button>
+    </nav>
+</header>
+<body>
+
+<section id="about" class="tab" style="display: none;">
+
+    <div class="about-section">
+        <h3>What is this server about?</h3>
+        <p>FemiteBox is a small minecraft box server.</p>
+    </div>
+
+</section>
+
+<section id="htj" class="tab" style="display: none;">
+
+    <div class="about-section">
+        <h3>How do i join?</h3>
+        <p>Well, the server is 1.19.2+ so you can probably join.</p>
+    </div>
+
+    <div class="about-section">
+        <h3>What if the server isn't online?</h3>
+        <p>Ok, you can click on the link below, and you can start it up.</p>
+        <a href="https://falixnodes.net/startserver">CLICK HERE</a>
+    </div>
+
+</section>
+
+<script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab').forEach(tab => {
+        tab.style.display = 'none';
+      });
+      document.getElementById(tabId).style.display = 'block';
+    }
+</script>
+</body>
+</html>
