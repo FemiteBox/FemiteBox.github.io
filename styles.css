@@ -212,3 +212,29 @@ section {
     .contact-form button:hover {
       background: #1b5bbf;
     }
+
+    #secretPassword {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 60%;
+      max-width: 300px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px #000000;
+    }
+
+    #step3 button {
+      background: #2575fc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      font-weight: bold;
+    }
+
+    #step3 button:hover {
+      background: #1b5bbf;
+      transform: translateY(-3px);
+    }
