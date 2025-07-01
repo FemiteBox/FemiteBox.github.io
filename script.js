@@ -29,8 +29,10 @@
       const content = document.getElementById("secretContent");
 
       const correctPassword = "8Ba9Sd8Qb2";
+      const correctPassword2 = "rubik's cube";
+      const correctPassword3 = "insanity";
 
-      if (password === correctPassword) {
+      if (password === correctPassword || password === correctPassword2 || password === correctPassword3) {
         content.style.display = "block";
         message.style.color = "green";
         message.innerText = "Access granted!";
